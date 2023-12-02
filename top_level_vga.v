@@ -187,7 +187,7 @@ module hex_vga(iClock, iResetn, x_counter, y_counter, pixel_out, x_counter_enabl
 	vga_seven_seg VSS3(timer_0, x_counter - SS_X3, y_counter - SS_Y3, SS_C, ss_3_pixel_out); // timer 0 is the decimal digit value 
 	
 	// vga_score(x, y, c, pixel_out)
-	vga_seven_seg VSCORE(x_counter - SC_X, y_counter - SC_Y, SC_C, score_pixel_out);
+	vga_score VSCORE(x_counter - SC_X, y_counter - SC_Y, SC_C, score_pixel_out);
 	
 	// vga_timer(x, y, c, pixel_out)
 	vga_timer VTIMER(x_counter - TI_X, y_counter - TI_Y, TI_C, timer_pixel_out);
