@@ -1,6 +1,6 @@
 # Hand-Eye Coordination Game/Tool - DE1-SoC Project
 
-![CAD 1](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/f7df1696-e6b6-4c69-ba0a-03a0627b2064)
+
 
 ## Table of Contents
 
@@ -25,8 +25,12 @@ Welcome to the Hand-Eye Coordination Game/Tool project! This engineering project
 The primary goal of this project is to create a hand-eye coordination game. The DE1-SoC board, Quartus for Verilog coding, and ModelSim for testing are utilized to implement the game's logic. The game involves pressing one of 8 buttons that light up, and after each correct press, another button lights up. A default timer of 1 minute challenges users to press as many correct buttons as possible to score the most points.
 
 ## Hardware Setup
-
+![CAD 1](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/f7df1696-e6b6-4c69-ba0a-03a0627b2064)
 Describe the hardware setup, including details on the DE1-SoC board connections and any additional components. Highlight the role of the 8 buttons and their connections to the DE1-SoC board.
+
+## Electrical Setup
+
+![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/d1be5c0d-4030-4d48-967f-dfd04706f4c5)
 
 ## Software Setup
 
@@ -40,20 +44,9 @@ Explain the rules of the hand-eye coordination game. Detail the button-press seq
 
 Outline the structure of the project's Verilog code. Describe the key modules and their functionalities, emphasizing the use of a Finite State Machine (FSM) to control the game flow.
 
-## Custom Structure
-
-Include information about the custom structure assembled to hold the 8 large buttons. Mention that a picture of the custom structure can be found elsewhere in the GitHub repository.
 
 ## Screenshots
 
 Insert screenshots of the game, including the home screen, button sequences, and scoring displays.
 
-## Usage
 
-Guide users on how to navigate the game, including options on the home screen such as viewing game rules, adjusting settings, and starting the game using the implemented Finite State Machine (FSM).
-
-## Contributing
-
-Provide guidelines for contributing to the project. Include information on coding standards, testing procedures, and how to submit contributions.
-
-## License
