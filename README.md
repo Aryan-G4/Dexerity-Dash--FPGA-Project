@@ -1,6 +1,6 @@
 # Hand-Eye Coordination Game/Tool - DE1-SoC Project
-![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/4de31241-867b-4b43-a4ad-0d70b65c0345)
-![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/17f7fede-7a36-4f66-8a21-7e9148044038)
+![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/4de31241-867b-4b43-a4ad-0d70b65c0345)
+![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/17f7fede-7a36-4f66-8a21-7e9148044038)
 
 
 
