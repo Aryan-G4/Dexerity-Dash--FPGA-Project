@@ -1,6 +1,7 @@
 # Hand-Eye Coordination Game/Tool - DE1-SoC Project
-![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/4de31241-867b-4b43-a4ad-0d70b65c0345)
-![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/17f7fede-7a36-4f66-8a21-7e9148044038)
+![E3297C0F-8B77-4BE0-AE88-34E51D8D0A61](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/d2fbda56-f730-4d2a-b3b5-2ded85dea539)
+![68E11417-B646-413E-A382-EA41B3BA177F](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/66e1e866-d1dc-40f4-9479-f86caae3ffe6)
+
 
 
 
@@ -24,19 +25,20 @@ Welcome to the homepage of Dexterity Dash, a hand-eye coordination tool/game aim
 
 ## Project Overview
 
-The primary goal of this project is to create a hand-eye coordination game. The DE1-SoC board, Quartus for Verilog coding, and ModelSim for testing are utilized to implement the game's logic. The game involves pressing one of 8 buttons that light up, and after each correct press, another button lights up. A default timer of 1 minute challenges users to press as many correct buttons as possible to score the most points.
+The primary goal of this project is to create a hand-eye coordination game. The DE1-SoC board, Quartus for Verilog coding, and ModelSim for testing are utilized to implement the game's logic. The game involves pressing one of 8 buttons that light up, and after each correct press, another button lights up. A default timer of 30 seconds challenges users to press as many correct buttons as possible to score the most points.
 
 ## Hardware Setup
 ![CAD 1](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/f7df1696-e6b6-4c69-ba0a-03a0627b2064)
-![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/cfea0838-5542-431e-b10f-78fa93a8ec53)
+![AEA7F85D-6630-497D-BC20-0A685D175983](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/7032171e-aac6-40be-a4d5-aa7db427167f)
 
 Describe the hardware setup, including details on the DE1-SoC board connections and any additional components. Highlight the role of the 8 buttons and their connections to the DE1-SoC board.
 
 ## Electrical Setup
-
+### Circuit Schematic to be implemented on the breadboard
 ![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/d1be5c0d-4030-4d48-967f-dfd04706f4c5)
-![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/343350a7-f09a-4dd9-9d58-41fc2a8f2724)
-![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/c391b58a-7b1c-42be-b8bd-b2188a4580d9)
+![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/3cbf9fd6-6ed5-401e-8441-873fb6a83798)
+![486B255D-B9AB-4188-B3D1-C4E8ACC050CD](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/e878659e-f6ae-4cb4-bc1c-b90ef3d461d8)
+
 
 ## Software Setup
 
