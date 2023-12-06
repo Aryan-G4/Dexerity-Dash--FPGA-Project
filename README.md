@@ -10,11 +10,11 @@
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
 - [Hardware Setup](#hardware-setup)
+- [Electrical Setup](#electrical-setup)
 - [Software Setup](#software-setup)
 - [Game Rules](#game-rules)
 - [Project Structure](#project-structure)
-- [Custom Structure](#custom-structure)
-- [Screenshots](#screenshots)
+- [Early Work](#early-work)
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Welcome to the homepage of Dexterity Dash, a hand-eye coordination tool/game aim
 The primary goal of this project is to create a hand-eye coordination game. The DE1-SoC board, Quartus for Verilog coding, and ModelSim for testing are utilized to implement the game's logic. The game involves pressing one of 8 buttons that light up, and after each correct press, another button lights up. A default timer of 30 seconds challenges users to press as many correct buttons as possible to score the most points.
 
 ## Hardware Setup
-###Solidworks model
+### Solidworks model
 ![CAD 1](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/f7df1696-e6b6-4c69-ba0a-03a0627b2064)
 Using solidworks, I created a comprehensive model of the game controller to ensure that all buttons are non-intersecting and ground clearance as well as screw clearance was accounted for.
 ### Construction Process
