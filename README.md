@@ -18,7 +18,7 @@
 
 ## Introduction
 
-Welcome to the homepage of Dexterity Dash, a hand-eye coordination tool/game aiming to make training hand-eye coordination fun for those suffering from head trauma and brain injury. This engineering project aims to develop a hand-eye coordination game using the DE1-SoC FPGA board, Verilog for coding, and ModelSim for testing. The game enhances users' hand-eye coordination by requiring them to press illuminated buttons in a specific sequence within a time limit to score points.
+Welcome to the homepage of Dexterity Dash, a hand-eye coordination tool/game aiming to make training hand-eye coordination and reflexes fun for those suffering from head trauma and brain injury. This engineering project aims to develop a hand-eye coordination game using the DE1-SoC FPGA board, Verilog for coding, and ModelSim for testing. The game enhances users' hand-eye coordination by requiring them to press illuminated buttons in a specific sequence within a time limit to score points.
 
 ## Project Overview
 
@@ -38,20 +38,35 @@ After the wooden chassis was complete, we installed the buttons and LEDs to comp
 ## Electrical Setup
 ### Circuit Schematic to be implemented on the breadboard
 ![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/d1be5c0d-4030-4d48-967f-dfd04706f4c5)
+
 Using KiCad I created a schematic of the electrical system that had to be implemented to allow the FPGA to interact with the buttons and switches.
 
 ![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/3cbf9fd6-6ed5-401e-8441-873fb6a83798)
 ![486B255D-B9AB-4188-B3D1-C4E8ACC050CD](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/e878659e-f6ae-4cb4-bc1c-b90ef3d461d8)
 ![7FF55709-1F49-4A41-8A71-BEF448E0833A](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/18eb1549-8e2a-45c8-859b-1432bd40856f)
-To ensure rapid production and prototyping, I used a breadboard to assemble the circuit show in the schematic, colour coding wires to allow for easy installation, debugging, and removall of wires. 
+To ensure rapid production and prototyping, I used a breadboard to assemble the circuit show in the schematic, colour coding wires to allow for easy installation, debugging, and removal of wires. 
 
 ## Software Setup
 
-Provide details on the software setup, including the use of Quartus for Verilog coding and ModelSim for testing. Include any specific configurations or settings required for the DE1-SoC board.
+Using Quartus, VSCode and ModelSim, we wrote this game exclusively in Verilog. Our Final code is under _DEXTERITYDASH.V_, and all other files are drafts and tester code.
+
+Here is a list of Verilog features we implemented:
+- A VGA output and Display showing a welcome screen as well as a max score and max time info screen.
+- A Finite State Machine to control the two screens of the VGA
+- Onboard FPGA Keys, LEDs, 7-Segment Displays, and GPIO pins
+- A binary to decimal and a decimal to hexadecimal converter
+- Multiple multi-bit wide registers to store data
+- A timer implemented by generating a waveform and using clock crossing.
+- Edge Triggered Flipflops to count score
+- 
+
+Here is a functional simulation of simulation of our game logic. GPIO_0 is the user input, and when it matches GPIO_1(the signal signifying which button we want to press), correctsignal goes high for an instant and this causes the score counter to increase.
+![modelsim](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/5456b2c6-6864-46da-b954-85f8ec024fc1)
+
 
 ## Game Rules
 
-Explain the rules of the hand-eye coordination game. Detail the button-press sequence, scoring mechanism, and the 1-minute time limit. Emphasize how the game helps users develop and enhance their hand-eye coordination skills.
+We aimed to keep dexterity dash very simple as we want to solely test 
 
 ## Project Structure
 
