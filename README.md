@@ -9,11 +9,10 @@
 
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
-- [Hardware Setup](#hardware-setup)
-- [Electrical Setup](#electrical-setup)
-- [Software Setup](#software-setup)
+- [Hardware Setup](#hardware-Component)
+- [Electrical Setup](#electrical-Component)
+- [Software Setup](#software-Component)
 - [Game Rules](#game-rules)
-- [Project Structure](#project-structure)
 - [Early Work](#early-work)
 
 ## Introduction
@@ -24,7 +23,7 @@ Welcome to the homepage of Dexterity Dash, a hand-eye coordination tool/game aim
 
 The primary goal of this project is to create a hand-eye coordination game. The DE1-SoC board, Quartus for Verilog coding, and ModelSim for testing are utilized to implement the game's logic. The game involves pressing one of 8 buttons that light up, and after each correct press, another button lights up. A default timer of 30 seconds challenges users to press as many correct buttons as possible to score the most points.
 
-## Hardware Setup
+## Hardware Component
 ### Solidworks model
 ![CAD 1](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/f7df1696-e6b6-4c69-ba0a-03a0627b2064)
 Using solidworks, I created a comprehensive model of the game controller to ensure that all buttons are non-intersecting and ground clearance as well as screw clearance was accounted for.
@@ -35,20 +34,24 @@ Using a Miter Saw, Drill press, and impact driver, we assembled the gameboard ac
 ![AEA7F85D-6630-497D-BC20-0A685D175983](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/7032171e-aac6-40be-a4d5-aa7db427167f)
 After the wooden chassis was complete, we installed the buttons and LEDs to complete the mechanical aspect of the gameboard.
 
-## Electrical Setup
+## Electrical Component
 ### Circuit Schematic to be implemented on the breadboard
 ![image](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/d1be5c0d-4030-4d48-967f-dfd04706f4c5)
 
 Using KiCad I created a schematic of the electrical system that had to be implemented to allow the FPGA to interact with the buttons and switches.
 
-![download](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/3cbf9fd6-6ed5-401e-8441-873fb6a83798)
 ![486B255D-B9AB-4188-B3D1-C4E8ACC050CD](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/e878659e-f6ae-4cb4-bc1c-b90ef3d461d8)
 ![7FF55709-1F49-4A41-8A71-BEF448E0833A](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/18eb1549-8e2a-45c8-859b-1432bd40856f)
 To ensure rapid production and prototyping, I used a breadboard to assemble the circuit show in the schematic, colour coding wires to allow for easy installation, debugging, and removal of wires. 
 
-## Software Setup
+## Software Component
 
 Using Quartus, VSCode and ModelSim, we wrote this game exclusively in Verilog. Our Final code is under _DEXTERITYDASH.V_, and all other files are drafts and tester code.
+
+Shown below is a block diagram of how all different code modules and programs interact with each other. 
+![Code Block Diagram](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/0dcf2a52-2687-4f9e-aeea-b01f1b4b3609)
+
+Despite our hardware and electrical components being quite complex given the scope of the project, we did not shy away from making our software just as complex, using several features of the DE1-SoC board.
 
 Here is a list of Verilog features we implemented:
 - A VGA output and Display showing a welcome screen as well as a max score and max time info screen.
@@ -60,17 +63,13 @@ Here is a list of Verilog features we implemented:
 - Edge Triggered Flipflops to count score
 - 
 
-Here is a functional simulation of simulation of our game logic. GPIO_0 is the user input, and when it matches GPIO_1(the signal signifying which button we want to press), correctsignal goes high for an instant and this causes the score counter to increase.
+Here is a functional simulation of simulation of our game logic. GPIO_0 is the user input, and when it matches GPIO_1(the signal signifying which button we want to press), 'correctsignal' goes high for an instant and this causes the score counter to increase.
 ![modelsim](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/5456b2c6-6864-46da-b954-85f8ec024fc1)
 
 
 ## Game Rules
 
-We aimed to keep dexterity dash very simple as we want to solely test 
-
-## Project Structure
-
-Outline the structure of the project's Verilog code. Describe the key modules and their functionalities, emphasizing the use of a Finite State Machine (FSM) to control the game flow.
+We aimed to keep Dexterity Dash ~TM~ very simple as we want to test hand-eye coordination solely, eliminating external factors such as game complexity. To begin the game, the user simply presses the reset button, where they will be shown a timer and their score. The board should have buttons that light up and your job as the user is to press the lit up buttons, if the user presses a lit up button, then they score a point and a new button is lit up. The user must push their hand-eye coordination to score as many points as possible before the timer runs out. This allows them to have personal records to aim to beat, benchmarking their improvement. 
 
 
 ## Early Work
