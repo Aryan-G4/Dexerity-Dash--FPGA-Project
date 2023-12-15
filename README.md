@@ -69,7 +69,7 @@ Here is a functional simulation of simulation of our game logic. GPIO_0 is the u
 
 ## Game Rules
 
-We aimed to keep Dexterity Dash ~TM~ very simple as we want to test hand-eye coordination solely, eliminating external factors such as game complexity. To begin the game, the user simply presses the reset button, where they will be shown a timer and their score. The board should have buttons that light up and your job as the user is to press the lit up buttons, if the user presses a lit up button, then they score a point and a new button is lit up. The user must push their hand-eye coordination to score as many points as possible before the timer runs out. This allows them to have personal records to aim to beat, benchmarking their improvement. 
+We aimed to keep Dexterity Dash ~~TM~~ very simple as we want to test hand-eye coordination solely, eliminating external factors such as game complexity. To begin the game, the user simply presses the reset button, where they will be shown a timer and their score. The board should have buttons that light up and your job as the user is to press the lit up buttons, if the user presses a lit up button, then they score a point and a new button is lit up. The user must push their hand-eye coordination to score as many points as possible before the timer runs out. This allows them to have personal records to aim to beat, benchmarking their improvement. 
 
 
 ## Early Work
