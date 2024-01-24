@@ -1,4 +1,4 @@
-# DEXTERITY DASH - Hand-Eye Coordination Tool - ECE241 Final Project
+# DEXTERITY DASH - Hand-Eye Coordination Training Device
 ![E3297C0F-8B77-4BE0-AE88-34E51D8D0A61](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/d2fbda56-f730-4d2a-b3b5-2ded85dea539)
 ![68E11417-B646-413E-A382-EA41B3BA177F](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/66e1e866-d1dc-40f4-9479-f86caae3ffe6)
 
